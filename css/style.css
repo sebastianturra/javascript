@@ -8,16 +8,16 @@
 }
 
 .card:hover{
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(245 245 245 / 100%);
 }
 
 .card:active{
-    background-color: rgb(230, 230, 230);
+    background-color: rgba(230 230 230 / 100%);
 }
 
 input{
     margin: 5px 5px;
-    border: 2px solid #bfc7c6;
+    border: 2px solid #bfc7c6ff;
 }
 
 input[type=text]:hover{
@@ -33,7 +33,7 @@ input[type=text]:focus {
 .boton {
 border: none;
 background-color: tomato;
-color: rgb(255, 255, 255);
+color: rgb(255 255 255);
 border-radius: 7px;
 padding: 10px;
 width: 100px;
@@ -43,10 +43,10 @@ margin: 10px 5px 10px 30px;
 box-shadow: 1px 1px 2px brown;
 }
 .boton:hover {
-background-color: rgb(247, 80, 51);
+background-color: rgb(247 80 51);
 }
 .boton:active {
-background-color: rgb(253, 54, 18);
+background-color: rgb(253 54 18);
 }
 
 .inline{

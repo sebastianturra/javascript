@@ -12,16 +12,15 @@
         <p id="resusutxt"></p> 
     </div>
     <div style="display: flex;">
-        <div onclick="document.location='camaras.html'" class="card cursor">
-            <p>Añadir Camara</p>
-        </div>
         <div onclick="anausu();" class="card cursor">
             <p>Añadir usuario</p>
         </div>
-        <div onclick="anacam();" class="card cursor">
-            <p>Ver desde la consola</p>
-            <p>Añadir Camaras console log</p>
+        <div onclick="crearcamara('Administrador');" class="card cursor">
+            <p>Añadir Camaras</p>
         </div>
+    </div>
+    <div>
+        <button onclick="cerrarsesion();">Cerrar sesión</button>
     </div>
     <script src="js/script.js"></script>
 </body>
