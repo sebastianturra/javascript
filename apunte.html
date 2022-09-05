@@ -1,0 +1,99 @@
+<script>
+
+    //Declaración
+    let auto = "verde";
+    let casa = "grande";
+    let familia = "progreso";
+
+    // let objfamilia = {auto:"verde",casa:"grande",familia:"progeso"};
+    // Es lo mismo que inicialización de objeto
+    let objfamilia = {
+        auto:"verde",
+        casa:"grande",
+        familia:"progreso"
+    };
+
+    //para acceder a los valores de los objetos hay 2 maneras
+    //manera 1
+    console.log("Metodo 1: obtener valor del objeto :" + objfamilia.auto);
+    //manera 2
+    console.log("Metodo 2: obtener valor del objeto :" + objfamilia["auto"]);
+
+    //Cambiar el valor de una propiedad del objeto, hay 2 manera:
+    //manera 1:
+    console.log("Metodo 1: Cambiar valor del objeto: " + (objfamilia.auto="rojo"));
+    //manera 2:
+    console.log("Metodo 2: Cambiar valor del objeto: " + (objfamilia["casa"]="americana"));
+
+    //función  constructura
+    //Se debe de crear para poder crear nuevos objetos
+    /*
+    function Persona(nombre, edad){
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    */
+
+    //Inicializamos las propropiedad del objeto con la instaciación de new
+    //let personauno = new Persona("Juan",35); 
+
+    //Otra de form de usar this
+    function personal(literal){
+        this.nombre = literal.nombre;
+        this.cargo = literal.cargo;
+    }
+
+    const personaluno = new personal({nombre:"Juan",cargo:"Técnico"});
+
+    //funcion
+    function f1(){
+        return this;
+    }
+
+    //metodo
+    function persona(nombre, edad, pais){
+        this.nombre = "juan";
+        this.edad = 35;
+        this.pais = colombia;
+    }
+
+    //en javascript ya se cuenta con objetos que no nos damos cuenta lo utilizamos
+    let cadena = "esto es un cadena";
+
+    console.log(cadena.toLowerCase());
+    console.log(cadena.toUpperCase());
+    console.log(cadena.length);
+
+    function trabajo(nombre, cargo){
+        this.nombre = nombre;
+        this.cargo = cargo;
+        this.hablar = function (){ console.log("El nombre es " + this.nombre)}  
+    }
+    let trabajouno = new trabajo("Sebastián","Ingeniero informático");
+    trabajouno.hablar();
+
+    //in 
+    //indica si la propiedad existe en objeto
+    const trabajador = {trabajo:"Profesor",nombre:"Sebastián"};
+    console.log( "nombre" in trabajador);
+
+    //for
+    // accede a todas las propiedades del objeto
+    for( const propiedad in trabajador){
+        console.log(trabajador[propiedad]);
+    }
+
+    //Clases son equivalente a la funcion constructora
+    class laburo{
+        constructor(nombre, edad){
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+        hablar(){
+            console.log("Hola soy "+ this.nombre);
+        }
+    }
+
+    const laburouno = new laburo("Carlos",45);
+    laburouno.hablar();
+</script>
