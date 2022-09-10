@@ -10,7 +10,38 @@
 <body>
      <div class="card">
         <a href="sesion.html">Iniciar sesión</a>
-     </div>      
+     </div>   
+     <div class="card">
+        <div class="card__contenido">
+            <img src="img/camsim.webp" alt="Camara simple" width="100" height="100" title="camarasimple">
+            <p>Camara simple<br>Es un camara simple <br>$1000</p>
+            <input type="number" id="cam1" placeholder="Indique la cantidad">
+        </div>
+        <div class="card__contenido">
+            <img src="img/camwifi.avif" alt="Camara wifi" width="100" height="100" title="camaraswifi">
+            <p>Camara wifi<br>Es un camara wifi <br>$2000</p>
+            <input type="number" id="cam2" placeholder="Indique la cantidad">
+        </div>
+        <div class="card__contenido">
+            <img src="img/cam360.jpg" alt="Camara 360" width="100" height="100" title="camara360">
+            <p>Camara 360<br>Es un camara 360 <br>$3000</p>
+            <input type="number" id="cam3" placeholder="Indique la cantidad">
+        </div>
+        <!-- Poner un input numerico que calcule el valor con solo poner la cantidad-->
+        <hr>
+        <div class="card__contenido">
+            <p>¿Desea instalación?</p>
+            <label for="si">Si</label>
+            <input type="radio" id="si" name="siyno" value="Si">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="siyno" value="No">
+            <br>
+            <sub><em>*Costo de intalación es $1111*</em></sub>
+        </div>
+        <button class="boton" onclick="adquirir();">Adquirir</button>    
+        <hr>
+        <div class="card__contenido" id="tablaresultado" style="display: none;"></div>
+    </div>
     <script src="js/script.js"></script> 
 </body>
 </html>

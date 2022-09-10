@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,43 +24,6 @@
         <p>Ver desde la consola</p>  
         <button onclick="adquirir();">Adquirir</button> 
     </div>
-    <script>
-        function adquirir(){
-            let valorcompra = 0;
-            let a = document.getElementsByName("siyno");
-
-            let camsimcab = document.getElementById("cantsc").value;
-            let cantsw = document.getElementById("cantw").value;
-            let cant360 = document.getElementById("cant360").value;
-            
-            //función anonima simplificada
-            let comprar = (a,b) => a*b; 
-
-            /* Recorrer el array de nombre de las variables de camara.
-            for(i = 0 ; i < 3 ; i++){
-                valorcompra += comprar();
-            }  */
-
-            valorcompra += comprar(camsimcab, 1000);
-            valorcompra += comprar(cantsw,2000);
-            valorcompra += comprar(cant360,3000);
-
-            /* Utilizado para identificar el valor seleccionado del radio button */
-            for (let i =0 ; i < a.length ; i++){
-                if (a[i].checked) {
-                    var instalación = a[i].value;
-                }
-            }
-
-            /* funcion anonima */
-            let valorins = function () { valorcompra += 1111;}
-            
-            // Ternario javascript 
-            instalación === "Si" ? 
-                (valorins()) : (alert("nada"));
-            
-            console.log("El valor de la compra es: "+ valorcompra);
-        }
-    </script>
+    <script src="js/script.js"></script> 
 </body>
 </html>

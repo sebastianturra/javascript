@@ -57,3 +57,11 @@ background-color: rgb(253 54 18);
 .cursor{
     cursor: pointer;
 }
+
+.card__contenido{
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0;
+    margin: 5px 0px;
+    padding: 5px;
+}
