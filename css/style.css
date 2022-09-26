@@ -1,20 +1,66 @@
-.card{
+/*** Colores ***/
+/* Color Theme Swatches in Hex */
+.Proyecto-camaras-Javascript-1-hex { color: #FF4D2E; }
+.Proyecto-camaras-Javascript-2-hex { color: #FFED61; }
+.Proyecto-camaras-Javascript-3-hex { color: #FF6347; }
+.Proyecto-camaras-Javascript-4-hex { color: #2EFFA4; }
+.Proyecto-camaras-Javascript-5-hex { color: #5F3BFF; }
+
+/* Color Theme Swatches in RGBA */
+.Proyecto-camaras-Javascript-1-rgba { color: rgba(255, 77, 46, 1); }
+.Proyecto-camaras-Javascript-2-rgba { color: rgba(255, 237, 97, 1); }
+.Proyecto-camaras-Javascript-3-rgba { color: rgba(255, 99, 71, 1); }
+.Proyecto-camaras-Javascript-4-rgba { color: rgba(46, 255, 164, 1); }
+.Proyecto-camaras-Javascript-5-rgba { color: rgba(95, 59, 255, 1); }
+
+.txtcenter{
+    text-align: center;
+}
+
+.txtleft{
+    text-align: left;
+}
+
+.txtright{
+    text-align: right;
+}
+
+/*** Usuario ***/
+/* card */
+.usuario{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.usuario__card{
     margin: 15px auto;
     padding: 15px;
     border: 1px solid #00000060;
     box-shadow: 0px 0px 3px 0px black;
     border-radius: 5px;
     width: 350px;
+    cursor: pointer;
 }
 
-.card:hover{
+.usuario__card:hover{
     background-color: rgba(245 245 245 / 100%);
 }
 
-.card:active{
+.usuario__card:active{
     background-color: rgba(230 230 230 / 100%);
 }
 
+.usuario__formulario{
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px 0px black; 
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+/*Inputs*/
 input{
     margin: 5px 5px;
     border: 2px solid #bfc7c6ff;
@@ -30,16 +76,20 @@ input[type=text]:focus {
 }
 */
 
+/* Boton */
+.botonera{
+    display: flex;
+    justify-content: center;
+} 
 .boton {
 border: none;
 background-color: tomato;
 color: rgb(255 255 255);
 border-radius: 7px;
 padding: 10px;
-width: 100px;
+width: fit-content;
 text-align: center;
 cursor: pointer;
-margin: 10px 5px 10px 30px;
 box-shadow: 1px 1px 2px brown;
 }
 .boton:hover {
@@ -47,21 +97,4 @@ background-color: rgb(247 80 51);
 }
 .boton:active {
 background-color: rgb(253 54 18);
-}
-
-.inline{
-    /*display:flex;*/
-    display:inline-block;
-}
-
-.cursor{
-    cursor: pointer;
-}
-
-.card__contenido{
-    border: 1px solid rgb(0 0 0 / 50%);
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0;
-    margin: 5px 0px;
-    padding: 5px;
 }

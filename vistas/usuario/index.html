@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="resultado">
+                    <form id='formUsuario' class='usuario__formulario'>
+                        <div class="txtcenter">
+                            <h4>Crear Usuario</h4>
+                        </div> 
+                        <p>
+                        <label for='formRut'>Rut:</label>
+                        <input type='text' id='formRut' placeholder='Ingrese el rut'></p>
+                        <p><label for='formNombre'>Nombre:</label>
+                        <input type='text' id='formNombre' placeholder='Ingrese el Nombre'></p>
+                        <p>Tipo de Cuenta:</p>
+                        <label for='formGerente'>Gerente</label>
+                        <input type='radio' id='formGerente' name='tipocuenta' value='Gerente'>
+                        <label for='formAdministrativo'>Administrativo</label>
+                        <input type='radio' id='formAdministrativo' name='tipocuenta' value='Administrativo'>
+                        </p>
+                        <p>
+                            <button id='btnUsuarioCrear' class='boton'>Crear usuario</button>
+                        </p>
+                    </form> 
+                    <div>
+                        <button id="btnOcultarUsuarioCreado">Ocultar usuario creado</button>
+                        <button id="btnMostrarListado">Mostrar usuarios</button>
+                        <button id="btnLimpiarListado">Minimizar usuarios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="usuarioCreado">
+    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="listadoUsuario" class="col-12 table-responsive usuario">
+                    <table id="tablaUsuario" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Rut</th>
+                                <th>Nombre</th>
+                                <th>Fallos</th>
+                                <th>Cuenta</th>
+                                <th>Fecha</th>
+                                <th>Opciones</th>
+                            </tr>    
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="respuesta"><!-- Crear nodo -->
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="../../js/usuario.js"></script>
+</body>
+</html>

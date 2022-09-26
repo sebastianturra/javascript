@@ -1,40 +1,34 @@
-        
+       
 
-        let nombreusuario = "";
-        let nombrecamara = "";
+        let arrayCammara = [];
+        let carroCompra = [];
 
-        function usuario(){
-            this.anausu = function (){
-                let contador = 0;
-                do{
-                        let nomusu = prompt("Ingresar el nombre del usario");
-                        console.log("El nombre usuario agregado "+ nomusu);
-                        ++contador;
-                        nombreusuario += "Usuario: "+nomusu+", añadido con exito.<br>";
-                        document.getElementById("resusutxt").innerHTML = nombreusuario;
-                    }while(contador < 3);
-                    nombreusuario = "";
-            }
+        let menuusuarios = document.getElementById("menuusuarios");
+
+        menuusuarios.addEventListener("click", () => {
+            document.location.href="usuario/index.html";
+        });
+
+        /*
+        function menucamaras(){
+            
         }
-        
-        function anausu(){
-            document.getElementById("resusu").style.display="block";  
-            let usuariouno = new usuario();
-            usuariouno.anausu();
-        }
+        */
+
 
         function iniciosesion(usuario){
             if(usuario === "abcd"){
-                document.location.href="intranet.html";
+                document.location.href="../index.html";
             }else{
                 window.alert("Ese no es un usuario registrado, lanza.")
             }
         }
 
-        function cerrarsesion(){
+        let btnCerrarSesion = document.getElementById("btnCerrarSesion");
+        btnCerrarSesion.addEventListener("click", () => {
             window.alert("Estas cerrando sesión");
-            document.location.href="index.html";
-        }
+            document.location.href="../index.html";
+        })
 
         class camara{
             constructor(usuario){
